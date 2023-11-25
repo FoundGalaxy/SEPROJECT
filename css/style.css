@@ -1,0 +1,127 @@
+:root {
+    --white: #FFFFFF;
+    --black: #212121;
+    --primary: #610000;
+    --secondary: #9c0720;
+    --shader: #dc143c;
+    --complement: #f1666d;
+    --light: #ff9ea2;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+.titulo {
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.titulo span {
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.container {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.main_nav {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .main_nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.main_nav a {
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main_nav a:hover {
+    background-color: var(--primary);
+    color: var(--shader)
+}
+
+.nav_bg {
+    background-color: var(--secondary);
+}
+
+.hero {
+    background-image: url(/media/devsbkg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+
+.contenido_hero{
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_cont {
+    text-decoration: none;
+    background-color: var(--primary);
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .6rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .btn_cont{
+        width: auto;
+    }
+}
+
+.btn_cont:hover {
+    background-color: var(--primary);
+    color: var(--shader);
+}
