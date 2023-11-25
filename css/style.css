@@ -141,7 +141,13 @@ h1,h2,h3 {
     cursor: pointer;
 }
 
-/** Utilities **/
+/** Services & Scroll Snaps **/
+.services,
+.main_nav,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
 
 @media (min-width: 768px) {
     .services {
